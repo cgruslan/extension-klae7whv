@@ -1,0 +1,27 @@
+{
+  "name": "Service Helper",
+  "version": "1.0",
+  "description": "Private Service tool",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "*://*.example.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.example.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

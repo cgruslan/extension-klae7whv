@@ -1,0 +1,30 @@
+{
+  "name": "extension-klae7whv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "node scripts/remove-dist && node scripts/copy-static",
+    "build": "webpack --mode production",
+    "dev": "npm run prebuild && webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "fs-extra": "^8.0.1",
+    "rambda": "^2.8.0",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "webext-redux": "^2.0.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
